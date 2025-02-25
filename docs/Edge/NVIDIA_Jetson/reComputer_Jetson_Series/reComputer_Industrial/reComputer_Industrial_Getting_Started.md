@@ -260,9 +260,34 @@ You need to prepare the following hardware before getting started with reCompute
 - Keyboard and Mouse
 
 :::info
-We recommend using a physical machine as the host rather than a virtual machine.
-
-Please ensure that your host machine has more than 50GB of free space.
+We recommend that you use physical ubuntu host devices instead of virtual machines.
+Please refer to the table below to prepare the host machine.
+        
+<table style={{textAlign: 'center'}}>
+  <tbody>
+    <tr>
+        <td  rowspan="2"> JetPack Version </td>
+        <td class="dbon" colspan="3"> Ubuntu Version (Host Computer) </td>
+    </tr>
+    <tr>
+        <td > 18.04 </td>
+        <td > 20.04 </td>
+        <td > 22.04 </td>
+    </tr>
+    <tr>
+        <td >JetPack 5.x</td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+        <td > </td>
+    </tr>
+    <tr>
+        <td >JetPack 6.x</td>
+        <td > </td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+    </tr>
+  </tbody>
+</table>
 :::
 
 ### Enter Force Recovery Mode
@@ -309,46 +334,66 @@ The first method download is around 14GB and the second method download is about
 <TabItem value="Method 1" label="Method 1">
 
 - **Step 1:** Download the system image to your Ubuntu PC corresponding to the board you are using
-  <table>
+  <div class="table-center">
+  <table style={{textAlign: 'center'}}>
   <thead>
     <tr>
       <th>Device</th>
-      <th>Image Link</th>
-      <th>JetPack Version</th>
-      <th>L4T Version</th>
+      <th>Image Link1</th>
+      <th>Image Link2</th>
+      <th>SHA256</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>reComputer Industrial J4012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUhr3fzFqx9DmH83QrXmFAwBEpfC-VGsyBnqHSoOPPAzGQ?e=Wv7d8f" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EcXVegQs83tJpv3kmJPMmSEB8M9djK_gWgJapIJnOJQeUw?e=ntbXLi" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td rowSpan={6}>5.1.1</td>
-      <td rowSpan={6}>35.3.1</td>
+      <td>F6623A277E538F309999107297405E1<br />378CF3791EA9FD19F91D263E3B4C88333</td>
     </tr>
     <tr>
       <td>reComputer Industrial J4011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbaTHCLEwfNOqAR1DH-IAWYB20HBEPG2G-IkPJ1dJJcWJw?e=2VYQXJ" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EStCSSWeyUtLkJXMj5Y6tXcBru2PIQNHLl6p2BZsRbzxjA?e=Gaaa6m" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>414DFE16703D0A2EE972DF1C77FCE2E<br />8B44BC71726BB6EE4B1439C2D0F19A653</td>
     </tr>
     <tr>
       <td>reComputer Industrial J3011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbQu844dGA5Fjn3n-320hmoBt6wngMrIv6fErKLEZI1GyQ?e=uSU6qb" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERgyc60CqY9Aog6BMW9-yqQBj8pMaakSFTzHHvb4edt_eg?e=9qFHKp" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>347AB7247ED83286BDFAEF84B49B84C<br />5F5B871AEE68192339EDE4773149D8737</td>
     </tr>
     <tr>
       <td>reComputer Industrial J3010</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ETnL5lrC6IBPqm6Lafx1nCMBJJjml1IrCagrHPGhxFpzxA?e=BBM0kl" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb7J_TSNsDBCrvc1RbSOmnoBqmjR9jYhkvZpdQJOzkH5KA?e=h4r74v" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>860EC8EB3245CB91E7C5C321B26333B<br />59456A3418731FEF73AE0188DF655EE46</td>
     </tr>
     <tr>
       <td>reComputer Industrial J2012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeD01G8dJ8pIm187oS_VX-sBu3SmD4LhaBmwVz7X4-n_Gw?e=x9ULSq" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Ef_fEAq0aA5JksfnEz62JKABfYTUzlTdOxkiKwoThp17xg?e=UlSs7A" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>821CF92AF1FE8A785689FAF4751615A<br />A30E7F0770B4FA23327DFAF2C8B53FDD7</td>
     </tr>
     <tr>
       <td>reComputer Industrial J2011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVYQRYavCVRJrHGz12qUPlIBdmK3hrjEyglRkuLhBSlYuA?e=SBnrTU" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EVVUAexfVKxDnjbUGtYrJhEB1He6ZXIAD4uriNP76fxbMg?e=kGYF6h" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>DAB8FC069E4C62434C77AE3A6BA13EE<br />FB30003C9A14BFE82DE879B88ACDD85FA</td>
     </tr>
   </tbody>
   </table>
+</div>
 
+<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
+  * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
+</p>
 
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
 
 The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra)
 
@@ -383,7 +428,7 @@ After that, the board will reboot and will be ready to use!
   </TabItem>
 <TabItem value="Method 2" label="Method 2">
 
-#### Download and Prepare NVIDIA L4T and rootfs
+**Download and Prepare NVIDIA L4T and rootfs**
 
 ```sh
 wget https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v3.1/release/jetson_linux_r35.3.1_aarch64.tbz2
@@ -395,7 +440,7 @@ sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
-#### Download and Prepare Drivers
+**Download and Prepare Drivers**
 
 - **Step 1:** Download the driver files to your Ubuntu PC corresponding to the board you are using
 
@@ -493,40 +538,49 @@ sudo apt install nvidia-jetpack -y
 <TabItem value="Jetpack 6.0" label="Jetpack6.0">
 
 - **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
-  <table>
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
   <thead>
     <tr>
       <th>Device</th>
-      <th>Image Link</th>
-      <th>JetPack Version</th>
-      <th>L4T Version</th>
+      <th>Link</th>
+      <th>SHA256</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>reComputer Industrial J4012</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfJqxgk9wHVEjvu6W0qOe5YBjqKtnimUodCivWsMMzrcxA?e=ijoe7Z" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td rowSpan={6}>6.0</td>
-      <td rowSpan={6}>36.3.0</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcQJulAOt3ZJlnG-xr0lzdcB_d-yLXxEpicXuHr8sIca1w?e=dUWeYw" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>FEB6B83441F4C812921ED4554A3F6E903FCBF48DB1C2CF6C4240E764C3C3A4A3</th>
     </tr>
     <tr>
       <td>reComputer Industrial J4011</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETCtbIlpQKRBvcFKPDSF7j4BNIUPZdS7RP6J9c0Zk9-zlQ?e=sTSh1W" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERWRQ6mJe2hIoSwsatwN68IBF0prjvm7XX1aHFmsTd25fQ?e=x06NFw" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>77B5967DCDFAAE6725381EAE7BD570A254BD1F9E6E4C28DE8D9D84760C204DF1</th>
     </tr>
     <tr>
       <td>reComputer Industrial J3011</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EeGh5q1ztmBLrWfC5pbwsEcBbopBGR4M614-xi-ePlla8w?e=YFPGII" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcSZGn8G8QRKqJc1yV8wErsBhCgy_E2UmCX5O9utZtj4ug?e=uel2DE" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>0C5D1A7814E50270A78AD3AE3C04E90C4D7803111567A04018B26C43CEA8D564</th>
     </tr>
     <tr>
       <td>reComputer Industrial J3010</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETRks_NJG45HrCP514NlI_4BKna6iH3B4zAQQdwMbGS04g?e=UYihom" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Eaj1r69kX5hNjzgb0xcOun0BWtd9sjq318O4FFi8bMKHvQ?e=n8wrM1" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>30184A2A2800733118F4CC711010AE523C9A3F0E9565617B1C2E9CF64AE21CF0</th>
     </tr>
   </tbody>
   </table> 
+</div>
 
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
 
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
 
-The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra)
+:::info
+The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra).
+:::
 
 - **Step 2:** Extract the generated file 
 
@@ -555,6 +609,82 @@ After that, the board will reboot and will be ready to use!
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/106.png"/></div>
 </TabItem>
+
+<TabItem value="Jetpack 6.1" label="Jetpack6.1">
+
+- **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reComputer Industrial J4012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUNMocOFBZNPqqC-W9uiIM4BgYUw-ZL0pk6juOVPFd_vqg?e=C8ldYX" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>6A2B3A71EE77E7000034351020FBF9A5260F944FB30B5DE672BF7897DEE87B5A</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J4011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfYrDXxD_oRCuk5nv8WmtqIBPY9FjkEHiAmsZDpvDj-sfQ?e=qxV5MG" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>EC94A1F9E10D07CE2C78D8C1B742575A84DA543CCD95564D8E0BEC823C0CA514</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeOq0sfMDhBEqZPX-ti_gJ0BzUdSGeFf5RrSdxFnQ70aNQ?e=GVr10a" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>547E541E40A133A2CDEB3FAC399850ABC108325BBF109771420DDBCAF19E5E29</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3010</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXK1GomjByJKnmt3OdE5Vq8BSqzYZm1MY_yD18YjmRplLw?e=dIWPKA" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>B7F400C225423C8BC4C00A5915C3C634D2D7B15145FE0735479E6AD7613D07E5</th>
+    </tr>
+  </tbody>
+  </table> 
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+:::info
+The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra).
+:::
+
+- **Step 2:** Extract the generated file 
+
+```sh
+sudo tar -xvf <file_name>.tar.gz
+```
+
+- **Step 3:** Navigate to the extracted file from before and execute the flash command as follows 
+
+```sh
+cd mfi_xxxx
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0 --showlogs
+```
+
+Now it will start to flash the system image to the board. If the flashing is successful, you will see the below output
+
+<div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/99.png"/></div>
+
+
+- **Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
+
+</TabItem>
+
 </Tabs>
 
 <!-- Code END -->
@@ -572,11 +702,20 @@ To learn more about how to use all the hardware and interfaces on the reComputer
 - [reComputer Industrial Reference Guide](https://files.seeedstudio.com/products/NVIDIA/reComputer-Industrial-Reference-Guide.pdf)
 - [NVIDIA Jetson Devices and Carrier Boards Comparison](https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf)
 - [reComputer Industrial 3D File](https://files.seeedstudio.com/products/NVIDIA/Industrial/reComputer-Industrial.stp)
+- [Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+- [Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+- [Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+- [Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+## Tech Support & Product Discussion
 
-## Tech Support
+Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-Please do not hesitate to submit issues into our [forum](https://forum.seeedstudio.com/).
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
 
-<div>
-  <br /><p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://files.seeedstudio.com/wiki/Wiki_Banner/new_product.jpg" /></a></p>
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

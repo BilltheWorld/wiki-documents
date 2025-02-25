@@ -193,9 +193,41 @@ reComputer J40/ J30 series comes with JetPack 5.1 pre-installed on the included 
 
 ### Prerequisites
 
-- Ubuntu 
-- reComputer J4012/ J4011/ J3010 and J3011
+- Ubuntu Host Computer
+- reComputer J4012/ J4011/ J3010 or J3011
 - USB Type-C data transmission cable
+
+:::info
+We recommend that you use physical ubuntu host devices instead of virtual machines.
+Please refer to the table below to prepare the host machine.
+        
+<table style={{textAlign: 'center'}}>
+  <tbody>
+    <tr>
+        <td  rowspan="2"> JetPack Version </td>
+        <td class="dbon" colspan="3"> Ubuntu Version (Host Computer) </td>
+    </tr>
+    <tr>
+        <td > 18.04 </td>
+        <td > 20.04 </td>
+        <td > 22.04 </td>
+    </tr>
+    <tr>
+        <td >JetPack 5.x</td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+        <td > </td>
+    </tr>
+    <tr>
+        <td >JetPack 6.x</td>
+        <td > </td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+    </tr>
+  </tbody>
+</table>
+
+:::
 
 ### Enter Force Recovery Mode
 
@@ -282,7 +314,28 @@ The below image is for Orin NX 16GB
 
 </details>
 
-### Flash to Jetson
+
+### Flash the device with a single command.
+
+<details>
+
+<summary> Flash the device with a single command. </summary>
+
+The reComputer Jetson J30/40 has launched a one-click flashing script, which supports flashing Jetpack 5.1.1, 5.1.2 and 6.0. Currently, the one-click flashing for Jetpack 6.1 and other series of reComputer Jetson is under testing and will be available to everyone in the near future. 
+
+```bash
+wget -O ./flashing.sh https://files.seeedstudio.com/OSHW_Jetson/flashing.sh  && sudo chmod 777 ./flashing.sh && ./flashing.sh
+```
+
+<iframe width="960" height="480" src="https://www.youtube.com/embed/_YfpJAhhT-g?si=OJxCcPqWauYEp9LR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::caution
+Disclaimer: The one-click flashing script aims to make jetpack flashing quicker. The current version is a beta one and may have many problems. We hope for your understanding. If there are flashing issues, follow the `Flash The Device Step by Step` below and give feedback in our [Discord Jetson channel](https://discord.com/channels/862602258452578314/930732339624026152). We'll fix them promptly and improve this function in the near future. 
+:::
+
+</details>
+
+### Flash the device step by step.
 
 :::note
 Before moving onto flashing, it should be noted that Jetson Orin NX module only supports JetPack 5.1 and above, while Jetson Orin Nano module only supports JetPack 5.1.1 and above.
@@ -448,34 +501,65 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
   <thead>
     <tr>
       <th>Jetson Module</th>
-      <th>Download Link</th>
-      <th>JetPack Version</th>
-      <th>L4T Version</th>
+      <th>Download Link1</th>
+      <th>Download Link2</th>
+      <th>SHA256</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Jetson Orin NX 16GB</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EbEZRxHDtgBDjBrHK_7ltfEB6JBa3VGXLx3meNc0OJUL_g?e=8MNsTg" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td rowSpan={4}>6.0</td>
-      <td rowSpan={4}>36.3</td>
+      <td>Orin NX 16GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EavQHXoSEg9PuLs4vuujXLcB0-GW6Ti1zHGL2UHzgS6TWg?e=J7oRrf" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td>
+        <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EbEZRxHDtgBDjBrHK_7ltfEB6JBa3VGXLx3meNc0OJUL_g?e=8MNsTg" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>20b38d9524327fd714c37cb293036006e070b5335d6b4f6978a862be51c3db52</td>
     </tr>
     <tr>
-      <td>Jetson Orin NX 8GB</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQawJy3jmKBAmJgHght-vVUBHbsC3vtlvMsYfW7vsie3LQ?e=vor3t3" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>Orin NX 8GB</td>
+      <td>
+      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcfUdbmSiOBFo_Po-Cui3jkBDORKexZ4S43Jde5XApqdeQ?e=zqealW" target="_blank" rel="noopener noreferrer">Download
+      </a>
+      </td>
+      <td>
+      <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQawJy3jmKBAmJgHght-vVUBHbsC3vtlvMsYfW7vsie3LQ?e=vor3t3" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>da966e7616ed86b45e184b6db9c3eb81e779a5f4524f6c3c5610e56c53532fe1</td>
     </tr>
     <tr>
-      <td>Jetson Orin Nano 8GB</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EeJP8SNF76BKiJg2e-FKNd4BhJwlWiMbLcT6Y286tRO7JQ?e=ct6qLf" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>Orin Nano 8GB</td>
+      <td>
+      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EauK-aXvruxHsC1-bAmTwZkBNB0PsvPX6S6oV4Q1UrAUFw?e=rytWvU" target="_blank" rel="noopener noreferrer">Download
+      </a>
+      </td>
+      <td>
+      <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EeJP8SNF76BKiJg2e-FKNd4BhJwlWiMbLcT6Y286tRO7JQ?e=ct6qLf" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>e0fa101c5df6f507d123c2332e9fedea0ac54f8a5253cb28e71fdff01147fa68</td>
     </tr>
     <tr>
-      <td>Jetson Orin Nano 4GB</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERQJluPq9X1LmpLXTSGZVMwBVg9ikWw8veG2aOdHv504Gw?e=hujab4" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>Orin Nano 4GB</td>
+      <td>
+      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcHfrgY9GxVNiwGh6YTB50cBCc5QcKgnGpTZQfv94x4VNw?e=Rl73Zh" target="_blank" rel="noopener noreferrer">Download
+      </a>
+      </td>
+      <td>
+      <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERQJluPq9X1LmpLXTSGZVMwBVg9ikWw8veG2aOdHv504Gw?e=hujab4" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>80ebeac0a843baa2c3104ee6341d44f39a2cfab1c9c725e176c7b2a219b79dfc</td>
     </tr>
   </tbody>
 </table>
 </div>
 
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
 
 **Step 2:** Extract the downloaded image file:
 ```bash
@@ -514,11 +598,193 @@ sudo ln -s /usr/src/linux-headers-5.15.136-tegra-ubuntu22.04_aarch64/3rdparty/ca
 sudo apt install -y iwlwifi-modules
 ```
 
+</TabItem>
+
+<TabItem value="JP6.1" label="JP6.1">
+
+Here we will use NVIDIA L4T 36.4 to install Jetpack 6.1 on the reComputer
+
+**Step 1:** Download the system image to your Ubuntu PC corresponding to the Jetson module you are using:
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Jetson Module</th>
+      <th>Download Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orin NX 16GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWCZOBNb9C9AoZe-mt23jLABZk942Lf0yopVGFJFTeL5DA?e=o7epES" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> 3e53f484eb41a2d81f01ba2a0512a3c13d86d90f646207a488eaf77ae0cd5d69 </td>
+    </tr>
+    <tr>
+      <td>Orin NX 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcvDRK7qgWhGty_H-P7yHZ8Bob3v9AEs_vFVd-zOC3WX5w?e=FmlfjD" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> fc22a3d1669eb311cf237b8f4252896bfb71ff860c14f7a502c60fda5439d99d </td>
+    </tr>
+    <tr>
+      <td>Orin Nano 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeO8T8kNkpZGl9W2QfmnKYQBeXB8-M88aZWLMvPP7uARcA?e=fBuClA" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> c2e48b41d284e4c98a2bc3409f1a1d09c61e4b60d6a5bdec3a33d084560a3bba </td>
+    </tr>
+    <tr>
+      <td>Orin Nano 4GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY01pL5oq0FAmavoRY_p9DMBj4t-LHzRtEAh1UBQen3S3g?e=jUfauO" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> b9e4f5889a66d055d967884980aee6357316acb562c4d713ef2fdb21f4644788 </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+**Step 2:** Extract the downloaded image file:
+```bash
+sudo tar xpf mfi_xxxx.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nx-16g-j401-6.1-36.4.0-2024-12-04.tar
+```
+
+**Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 
+
+```bash
+cd mfi_xxxx
+# For example: cd mfi_recomputer-orin-j401
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0  --showlogs
+```
+
+You will see the following output if the flashing process is successful
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
+
+:::note
+The flash command may run for 2-10 minutes.
+:::
+
+**Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
 
 </TabItem>
+
+<TabItem value="JP6.2" label="JP6.2">
+
+Here we will use NVIDIA L4T 36.4.3 to install Jetpack 6.2 on the reComputer
+
+**Step 1:** Download the system image to your Ubuntu PC corresponding to the Jetson module you are using:
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Jetson Module</th>
+      <th>Download Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orin Nano 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ea8wqK7OE0VGtclEw1J0FIYB8I6qJEH_n1facfwl9AlhkQ?e=UoHjcf" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> D9ECF85D0BD52E6E90E9C567A52688C7FAEE7DD1BDC87ED557184086FD605249 </td>
+    </tr>
+    <tr>
+      <td>Orin Nano 4GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYuzr4pFfZ5Lp2WIqG_tZ7ABIYU9A0KuFl1nAs9FiGmZBQ?e=WALXR5" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> 00B881683FD2D61A22BD2D0326E7B5E39CB5C4F249BF2CD18A272766CB6612E7 </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+:::note
+Please note that due to the increased power consumption and heat generation after enabling `super mode`, the [reComputer J4011](https://www.seeedstudio.com/reComputer-J4011-p-5585.html) and [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6Iko0MDEyIiwiY19zZWFyY2hfcmVzdWx0X3BvcyI6MiwiY190b3RhbF9yZXN1bHRzIjo4LCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0ifQ%3D%3D) cannot operate stably in the highest mode. Therefore, this update does not include these two products.
+We are currently designing a new version of reComputer. Stay tuned!
+:::
+
+**Step 2:** Extract the downloaded image file:
+```bash
+sudo tar xpf mfi_xxxx.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.2-36.4.3-2025-02-08.tar.gz
+```
+
+**Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 
+
+```bash
+cd mfi_xxxx
+# For example: cd mfi_recomputer-orin-j401
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0  --showlogs
+```
+
+You will see the following output if the flashing process is successful
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
+
+:::note
+The flash command may run for 2-10 minutes.
+:::
+
+**Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
+
+</TabItem>
+
 </Tabs>
 
 <!-- Code END -->
+
+
+## Resources
+- [reComputer J30x Datasheet](https://files.seeedstudio.com/products/NVIDIA/reComputer-J301x-datasheet.pdf)
+- [reComputer J40x Datasheet](https://files.seeedstudio.com/products/NVIDIA/reComputer-J401x-datasheet.pdf)
+- [reComputer J30/J40 Schematic](https://files.seeedstudio.com/wiki/J401/reComputer_J401_SCH_V1.0.pdf)
+- [reComputer J30/J40 3D File](https://files.seeedstudio.com/wiki/reComputer-J4012/reComputer-J4012.stp)
+- [Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+- [Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+- [Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+- [Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+- [Jetson examples](https://github.com/Seeed-Projects/jetson-examples)
+- [reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
 
 ## Tech Support & Product Discussion
 

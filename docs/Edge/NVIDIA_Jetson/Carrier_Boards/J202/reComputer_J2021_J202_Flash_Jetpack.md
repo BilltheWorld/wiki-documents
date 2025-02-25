@@ -23,7 +23,7 @@ no_comments: false # for Disqus
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401-Carrier-Board-for-Jetson-Orin-NX-Orin-Nano-without-Power-Adapter-p-5637.html">
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/recomputer-j202-carrier-board-for-jetson-nano-xavier-nx-without-power-adapter-p-5435.html">
     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
   </a>
 </div>
@@ -37,6 +37,13 @@ reComputer J202 has nearly the same design and function as NVIDIA® Jetson Xavie
 - **High Versatility:** Suitable for complicated AI graphical applications.
 - **Comprehensive Certificates:** includes FCC, CE, RoHS.
 - **Flexible Customization:** provides changing accessories modules, logo, and hardware interfaces modification services based on J202 original design.
+
+:::note
+
+Since the Jetson Nano has only one PCIe lane, if the module uses the Jetson Nano to connect to the J202 carrier board, it can only select the M.2 Key M for SSD.
+
+:::
+
 
 ## Specifications
 <div class="table-center">
@@ -458,6 +465,23 @@ If you can't get into the system in **Flashing to eMMC with command-line -- Step
 :::note
 If more storage space is needed, we can use SD card to expand the capacity, or burn the system on SD card, you can refer to our recommended solution  [Flash System on SD card](/J101_Enable_SD_Card)
 :::
+
+## Resources
+
+[reComputer J202x datasheet](https://files.seeedstudio.com/wiki/reComputer/reComputer-J202x-datasheet.pdf)
+
+[reComptuer J202x Carrier Boards Schematic](https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer%20J202_V1.0_SCH_PDF_240822.pdf)
+
+[reComputer J202x 3D file](https://files.seeedstudio.com/products/NVIDIA-Jetson/J2021-Xavier-NX.stp)
+
+[Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+
+[Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+
+[Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+
+[Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+
 
 ## Tech Support & Product Discussion
 

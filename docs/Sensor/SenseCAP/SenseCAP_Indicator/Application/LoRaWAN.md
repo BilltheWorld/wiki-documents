@@ -63,7 +63,7 @@ In the realm of the Helium network, the team's contributions are particularly no
 
 Leveraging this profound expertise and continual engagement with a diverse customer base, the SenseCAP Team has strategically decided to integrate LoRa functionality into the SenseCAP Indicator.
 
-[^2]: [SenseCAP Products - Bazzar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
+[^2]: [SenseCAP Products - Bazaar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
 [^3]: [SenseCAP MX](https://www.sensecapmx.com/)
 
 Let's take a closer look at the [SenseCAP Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)'s LoRaWAN functionality.
@@ -678,4 +678,4 @@ Seeed Studio offers a comprehensive one-stop ODM service to accommodate rapid cu
 
 If you encounter any issues or have any questions while following this tutorial, please feel free to reach out to our tech support. We are always here to help!
 
-Visit our [Seeed Official Discord Channel](https://discord.com/invite/QqMgVwHT3X) to ask your questions or the [GitHub discussions](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/discussions) to share all you want!
+Visit our [Seeed Official Discord Channel](https://discord.gg/kpY74apCWj) to ask your questions or the [GitHub discussions](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/discussions) to share all you want!

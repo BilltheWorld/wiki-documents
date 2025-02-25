@@ -68,6 +68,10 @@ If you've opted to compile the source code into firmware, you'll require the ESP
 The ESP-IDF version must be greater than v5.0. If you're using an older version, you'll need to update it to the latest version.
 :::
 
+For newer users, this video may help you better understand the steps below:
+
+<iframe class="youtube-video-r" src="https://www.youtube.com/embed/oqJz6zKfc4A?si=glzTFfR7m392eITb" title="Set Up the ESP-IDF Toolchain for SenseCAP Indicator on Windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 #### **Toolchain Installation**
 
 <Tabs
@@ -115,8 +119,6 @@ Then you can use `get_idf` to activate the environment.[^refer](https://docs.esp
 
 </TabItem>
 </Tabs>
-
----
 
 #### Building Project and flashing {#BUILD}
 
@@ -408,7 +410,7 @@ The RP2040 Development Tool leverages Arduino to enhance your coding experience.
 
 - **Step 2**: Add the Raspberry Pi Pico Board
 
-Open your Arduino IDE, click on **Arduino IDE** > **Reference**, and copy the below URL to **Additional Boards Manager URLs**:
+Open your Arduino IDE, click on **Arduino IDE** > **Preferences**, and copy the below URL to **Additional Boards Manager URLs**:
 
 `https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json`
 

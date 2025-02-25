@@ -5,33 +5,52 @@ keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /sensecap_t1000_e
+sidebar_position: 2
 last_update:
   date: 7/1/2024
   author: Jessie
 ---
 
+## Video Tutorial
 
-### Preparation
+
+### Part 1: Unboxing Setup
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/9sCHpWPSPcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Part 2: Status Indicators
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/8p34S_9DDEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Part 3: Flash New Firmware
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/li6DTOeXK3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Part 4: Troubleshooting Instruction
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/iWahTuXwYnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Get Started
 
 Download `Meshtastic` App:
 
 * [IOS App](https://meshtastic.org/docs/category/apple-apps/)
 * [Android App](https://meshtastic.org/docs/category/android-app/)
 
-### Device Connection
-
-**Check the device name**
-
-Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).<br/>
-Select device: `T1000-E Tracker Card`<br/>
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/device-name1.png" alt="pir" width={800} height="auto" /></p>
-
-Click `Open Serial Monitor`, connect the device, and you will see the device name.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/device-name2.png" alt="pir" width={800} height="auto" /></p>
 
 
-Press the button once to power on the T1000-E tracker, the Bluetooth pairing will be activated automatically.
+
+### Power on the device
+
+
+Press once to power on the device, there will be a rising melody, and the LED light will stay on for about 1s.
+
+:::tip
+If the device doesn't respond when you press the button, please charge it first.
+:::
+
+### Connect via App
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -39,7 +58,6 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 
 <TabItem value="ios" label="IOS App">
-
 
 * Select the target device on the Bluetooth panel.
 
@@ -69,7 +87,10 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 
-#### Parameters Configuration
+
+
+
+### Configure the Parameters
 
 
 
@@ -99,39 +120,26 @@ In order to start communicating over the mesh, you must set your region. This se
 
 **Region List**
 
-Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/region-by-country/) for a more comprehensive list.
 
 
 |**Region Code**|**Description**|**Frequency Range (MHz)**|**Duty Cycle (%)**|**Power Limit (dBm)**|
 | :-: | :-: | :-: | :-: | :-: |
 |UNSET|Unset|N/A|N/A|N/A|
 |US|United States|902\.0 - 928.0|100|30|
-|EU\_433|European Union 433MHz|433\.0 - 434.0|10|12|
 |EU\_868|European Union 868MHz|869\.4 - 869.65|10|27|
-|CN|China|470\.0 - 510.0|100|19|
-|JP|Japan|920\.8 - 927.8|100|16|
-|ANZ|Australia & New Zealand|915\.0 - 928.0|100|30|
-|KR|Korea|920\.0 - 923.0|100||
-|TW|Taiwan|920\.0 - 925.0|100|27|
-|RU|Russia|868\.7 - 869.2|100|20|
-|IN|India|865\.0 - 867.0|100|30|
-|NZ\_865|New Zealand 865MHz|864\.0 - 868.0|100|36|
-|TH|Thailand|920\.0 - 925.0|100|16|
-|UA\_433|Ukraine 433MHz|433\.0 - 434.7|10|10|
-|UA\_868|Ukraine 868MHz|868\.0 - 868.6|1|14|
-|MY\_433|Malaysia 433MHz|433\.0 - 435.0|100|20|
-|MY\_919|Malaysia 919MHz|919\.0 - 924.0|100|27|
-|SG\_923|Singapore 923MHz|917\.0 - 925.0|100|20|
-|LORA\_24|2\.4 GHz band worldwide|2400\.0 - 2483.5|100|10|
+
+
+Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/region-by-country/) for a more comprehensive list.
+
 
 :::info
-**EU_433** and **EU_868** have to adhere to an hourly duty cycle limitation of 10%, calculated every minute on a rolling 1-hour basis. Your device will stop transmitting if you reach it, until it is allowed again.
+**EU_868** has to adhere to an hourly duty cycle limitation of 10%, calculated every minute on a rolling 1-hour basis. Your device will stop transmitting if you reach it, until it is allowed again.
 :::
 
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
 
-#### Sensor Configuration
+### Sensor Configuration
 
 |Sensor|Description|
 |-|-|
@@ -183,7 +191,7 @@ Navigate to `Settings` -> `Telemetry(Sensors)` -> Enable sensors.
 
 Navigate to `Settings` -> `External Notification` -> Enable `GPIO` -> Set `Output Pin GPIO`.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/buzzer-ios.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/buzzer-en.png" alt="pir" width={600} height="auto" /></p>
 
 
 
@@ -205,45 +213,202 @@ Navigate to `Settings` -> `External Notification` -> Enable `GPIO` -> Set `Outpu
 
 Check [External Notification Config](https://meshtastic.org/docs/configuration/module/external-notification/) for more details.
 
+:::tip
+After you update the device configuration, the device will restart, which may take some time.
+:::
 
-## Flash firmware
+
+## Flash Firmware
+
+
+
+### Check the Firmware Version
+
+Navigate to `Settings` -> `Firmware Updates`, check the current firmware version.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/check-version.png" alt="pir" width={400} height="auto" /></p>
+
+
+
+### <div class="danger">⚠️DO NOT FLASH THE FOLLOWING FIRMWARE</div>
+
+
+:::danger
+DO NOT FLASH OTHER FIRMWARE OTHER THAN T1000-E FIRMWARE, THIS MAY CAUSE THE DEVICE TO FREEZE.
+:::
+
+The following firmware will brick your device：
+
+
+* nrf52_promicro_diy_tcxo<br/>
+* nrf52_promicro_diy_xtal<br/>
+* Dongle_nRF52840-pca10059-v1<br/>
+* feather_diy<br/>
+* TWC_mesh_v4<br/>
+* wio-sdk-wm1110<br/>
+* wio-tracker-wm1110<br/>
+* xiao_ble
 
 
 ### Flash the Application Firmware
 
-* **Step 1**: Download the firmware
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Flash%20Firmware.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
-You may use the [Meshtastic Web Flasher](https://flasher.meshtastic.org/) to download and copy firmware.
-
-Select the device to `Seeed Card Tracker T1000-E` and the latest firmware, and download the `UF2` file.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-uf2.png" alt="pir" width={800} height="auto" /></p>
+#### Step 1: Enter DFU mode
 
 
-* **Step 2**: Enter DFU mode
-
-Connect the USB cable to your PC, press and hold the device button, then **quickly** connect the charging cable twice, the LED will be solid on, the device will enter the DFU mode, and there should be a driver named `T1000-E` display.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu2.gif" alt="pir" width={400} height="auto" /></p>
+<Tabs>
+<TabItem value="method1" label="Method 1">
 
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-driver.png" alt="pir" width={600} height="auto" /></p>
+Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).
 
-* **Step 3**: 
+Connect the device to your PC, select the device to `Seeed Card Tracker T1000-E` and choose the latest firmware, then click `Flash`.
 
-Download and Copy UF2 file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash-2.png" alt="pir" width={800} height="auto" /></p>
+
+Click `Enter DFU Mode`, there will be a serial port named `T1000-E xxx` display, click and connect it, the green LED will be solid, and there should be a driver named `T1000-E` display.
 
 
 
 
-### Flash the Bootloader
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect-serial.png" alt="pir" width={800} height="auto" /></p>
 
-:::danger note
-Not recommended to flash the bootloader unless advised by tech support!
+
+
+</TabItem>
+
+<TabItem value="method2" label="Method 2">
+
+
+Connect the USB cable to your PC, press and hold the device button, then **quickly** connect the charging cable twice, the green LED will be solid, and there should be a driver named `T1000-E` display.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
+
+</TabItem>
+</Tabs>
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-driver.png" alt="pir" width={800} height="auto" /></p>
+
+
+
+#### Step 2: Flash Erase
+
+
+:::caution note
+Before flashing the firmware, please flash the erased firmware first!
 :::
+
+Click the `trash` symbol.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/erase1.png" alt="pir" width={800} height="auto" /></p>
+
+Download the erase firmware and copy to the driver.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/erase-uf2.png" alt="pir" width={800} height="auto" /></p>
+
+
+This process may take some time, wait for the drive to disappear, then open a serial monitor to complete the erase process.
+
+
+#### Step 3: Flash Firmware
+
+
+
+Select the latest firmware, and download the `UF2` file.
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/down-uf2.png" alt="pir" width={800} height="auto" /></p>
+
+
+Copy UF2 file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
+
+
+
+
+## FAQ
+
+* **How to check the device name**
+
+
+ Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).<br/>
+
+
+
+
+
+ Click `Open Serial Monitor`, connect the device to your PC, check the serial log, keyword `using nodenum`.
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/monitor2.png" alt="pir" width={800} height="auto" /></p>
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/device-name3.png" alt="pir" width={800} height="auto" /></p>
+
+* **How to reboot the device?**
+
+ Press and hold the button, then connect the charging cable.
+
+
+## Troubleshooting
+
+
+
+### Device never turns on
+
+* Charge the device for 1~2 hours
+
+* Change the charging cable
+
+
+### Device stuck in boot loop
+
+
+**Description:**
+
+The device will restart repeatedly, and the serial port connects and disconnects repeatedly.
+
+**Solution:**
+
+* Step 1: Try to enter DFU mode manually: press and hold the device button, then **quickly** connect the charging cable twice, the green LED will be solid on.
+
+:::note
+To successfully enter the DFU mode, you need to perform this operation quickly. You may need to try multiple times.
+:::
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
+
+* Step 2: [Erase Flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase).
+
+* Step 3: [Flash Firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
+
+
+
+
+### Device bricked
+
+**Description:**
+
+The device not responding, no LED, can not pair with your App.
+
+
+**1) Device can still enter the DFU mode, then try to flash the bootloader**.
+
+
+#### Flash the Bootloader
+
+
 
 
 * [Bootloader download](https://files.seeedstudio.com/wiki/SenseCAP/lorahub/t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip)
+
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash%20bootloader.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+:::danger note
+When you are flashing the bootloader, please make sure the cable connection is stable and **DO NOT** disconnect it during the flash process.
+:::
 
 **Step1: Adafruit-nrfutil Installation**
 
@@ -317,33 +482,74 @@ Copy or move it elsewhere for your convenience, such as directory in your %PATH%
 </Tabs>
 
 
-**Step2: Flash the bootloader**
+**Step2: Check your port number**
 
-Connect the device to your PC and run the following command:
+Connect your device to your PC, and check the port number.
+
+Example:
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/usb-port.png" alt="pir" width={600} height="auto" /></p>
+
+**Step3: Flash the bootloader**
+
+In the terminal or command prompt, navigate to the directory where you downloaded the bootloader zip package and execute the following command, replacing the correct port for your device:
 
 * **For Windows**: 
 ```
-adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip -p COMxx -b 115200
+adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip -p COMxx -b 115200 --singlebank --touch 1200
 ```
 
 * **For others**: 
 ```
-adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip -p /dev/tty.SLAB_USBtoUART -b 115200
+adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip -p /dev/tty.SLAB_USBtoUART -b 115200 --singlebank --touch 1200
 ```
 
-Replace the serial port with your device port. Example:
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/usb-port.png" alt="pir" width={600} height="auto" /></p>
+
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash-success.png" alt="pir" width={800} height="auto" /></p>
 
 
 
 
-## FAQ
+When you have completed the above steps, then you can follow this [step](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-application-firmware) to flash the application firmware. 
 
 
 
-* **How to reset the device?**
+**2) Device can not enter DFU mode, but the serial port can be detected**.
 
-Press and hold the button, then connect the charging cable.
+* Open a serial port tool
+
+* Set the baud rate to `1200`.
+
+* Connect the device.
+   The light will flash briefly when you connect it. Keep trying this until the light stays on, means the device can back to DFU mode, then [flash bootloader](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-bootloader) -> [Erase flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase) -> [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
+
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/reset%20via%20serial%20tool.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+**3) Device can not enter DFU mode and no serial port display, please contact the tech support: support@sensecapmx.com**
+
+
+### Firmware flashing failed
+
+
+
+* **No data received on serial port**
+
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/no-dfu-device.png" alt="pir" width={500} height="auto" /></p>
+
+ Check if the device is in the DFU mode, the green light will be solid when the device is in DFU mode.
+
+* **Can't open serial port**
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wrong-port.png" alt="pir" width={500} height="auto" /></p>
+
+ Check if the port is correct, or try another port.
+
+
+
 
 
 

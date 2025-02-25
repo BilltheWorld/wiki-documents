@@ -1,6 +1,6 @@
 ---
 description: reServer Industrial Getting Started
-title: reServer Industrial
+title: reServer Industrial Getting Started
 keywords:
 - reServer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
@@ -15,8 +15,6 @@ last_update:
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reServer-Industrial/1.png"/></div>
 
 reServer Industrial series offers fanless, compact, AI-enabled NVR (Network Video Recorder) servers including NVIDIA Jetson™ Orin Nano/Orin NX modules, ranging from 20 TOPS to 100 TOPS AI performance. reServer Industrial is preinstalled with Jetpack 5.1.1, simplifies development, ideal for bulding VMS (Video Management System) together with powerful AI capabilities, which brings digital transformantion across industries of smart cities, security, industrial automation, smart factories.
-
-reServer Industrial features 2x 2.5" SATA HDD/ SSD drive bays to easily store hundreds of local video footages in a video analytics application. Also it enables multiple connectivity options including 5 RJ-45 Ethernet ports, 1 RS232/422/485, 4x Isolated DI/DO, 1x CAN, 4* USB3.1. Fanless design with versatile mounting options allows deployment from -20 to 60 ℃, which is ideal for more harsh environments and heavier loads.
 
 reServer Industrial comes with a passive heatsink and a fanless design, making it ideal for use in demanding environments. The passive heatsink allows for efficient cooling without the need for a fan, reducing the risk of component failure due to dust or other contaminants. The fanless design also reduces noise levels and power consumption, making it suitable for use in noise-sensitive environments and minimizing energy costs.
 
@@ -309,73 +307,188 @@ import TabItem from '@theme/TabItem';
         <th>JetPack Version</th>
         <th>L4T Version</th>
         <th>Image Link</th>
+        <th>Alternative Image Link</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td rowSpan={2}>reServer Industrial J4012</td>
+        <td rowSpan={4}>reServer Industrial J4012</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaRzlOF50wRDvR-1NIgs61YBKz-py02JpUSoa2xKw8i0YQ?e=Lg5LgL" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdCn0yi0ArRKivHb3mKLrwcBmBEKXlGKLCnNkRQNzyylAw?e=QTnhQa" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EV0nlnSfW3NEmcDq4l3u1M4BrzThb0-y44qa4hGXk-XfWg?e=G9ub1C" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdCn0yi0ArRKivHb3mKLrwcBmBEKXlGKLCnNkRQNzyylAw?e=QTnhQa" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J4011</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ES_8t6K7-0tJmkfcrTs0rgoBGvrBiq4Tr6X6ZTU3SjXxjQ?e=vuiqGS" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={4}>reServer Industrial J4011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ES3YbJVFEWBMjaDiE49HNIwB99DwjtfX4QUl3j9Y2eG5KA?e=uBlimq" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J3011</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={4}>reServer Industrial J3011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERyNbY0Uv3FDpjaziT2Ni3QBZJvs-v5gQ1RXcYwH4x-UxQ?e=jlBd3I" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY0cen9MPIhJpM2LBfm2edEBZtw53n2C9PwqsY2XaiSH_w?e=LWQren" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J3010</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={4}>reServer Industrial J3010</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeCYmkCdhqRGrh2idfcueV0B4btw0JAzCt8i7ePWZwSeng?e=XH9HDx" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQwZP5Sc6YZDrhcE6BFeMjoBVVq5BLwhT9qXhRKzk8_oyA?e=oSzcOc" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQgrBDUICyZCnKBI_qVeupoBYqQJ1dP7_lcxUwxUphg6Qw?e=ObUzPI" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
+<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
+  * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
+</p>
 
 <!-- The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra) -->
 
@@ -542,21 +655,40 @@ There are 2 LEDs (green and yellow) on each Ethernet port which indicates the fo
 
 - Before connecting PoE cameras, you need to enable the PoE function for the 4 Ethernet ports. Enable it as follows:
 
-  ```sh
-  sudo -i
-  cd /sys/class/gpio
-  echo 315 > export 
-  cd gpio315
-  echo "out" > direction
-  echo 1 > value
-  ```
+  <Tabs>
+  <TabItem value="Jetpack 5.1.x" label="Jetpack 5.1.x">
 
-- If you need to configure different IP addresses for each POE interface, follow these instructions:
+    ```sh
+    sudo -i
+    cd /sys/class/gpio
+    echo 315 > export 
+    cd gpio315
+    echo "out" > direction
+    echo 1 > value
+    ```
+
+  </TabItem>
+  <TabItem value="Jetpack 6" label="Jetpack 6">
+
+    ```sh
+    sudo apt update
+    sudo apt install gpiod
+    gpioset gpiochip2 15=1
+    ```
+    
+  </TabItem>
+  </Tabs>
+
+### Binding Physical Network IP to eth Numbers
+  **The interfaces eth0 to eth3 are designated for PoE, with eth3 specifically referred to as PoE4.**
+
+  If you need to configure different IP addresses for each POE interface, follow these instructions:
 
   **Step 1**: Connect the POE to the reServer Industrial device. For example, to configure eth3, set the name of eth3 to POE3.
-    ```bash
-  sudo nmcli connection add type ethernet ifname eth3 con-name POE3
-    ```
+
+  ```bash
+  sudo nmcli connection add type ethernet ifname eth4 con-name POE3
+  ```
 
   **Step 2**: Configure the IP address of POE3 to **192.168.6.6**. The IP address can be customized according to actual usage.
   ```bash
@@ -564,7 +696,8 @@ There are 2 LEDs (green and yellow) on each Ethernet port which indicates the fo
   ```
 
   **Step3**: To set POE3's IPv4 address to manual configuration.
-    ```bash
+
+  ```bash
   sudo nmcli connection modify POE3 ipv4.method manual
   ```
 
@@ -731,14 +864,14 @@ We will explain how to do a simple benchmark on the connected SSD
 - **Step 1:** Check the write speed by executing the below command
 
 ```sh
-sudo dd if=/dev/zero of=/home/nvidia/test bs=1M count=512 conv=fdatasync
+sudo dd if=/dev/zero of=/home/$USER/test bs=1M count=512 conv=fdatasync
 ```
 
 - **Step 2:** Check the read speed by executing the below commands. Make sure to execute this after executing the above command for write speed.
 
 ```sh
 sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches"
-sudo dd if=/home/nvidia/test of=/dev/null bs=1M count=512
+sudo dd if=/home/$USER/test of=/dev/null bs=1M count=512
 ```
 
 ### mini PCIe

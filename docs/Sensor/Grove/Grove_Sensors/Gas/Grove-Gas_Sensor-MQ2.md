@@ -63,7 +63,7 @@ The Grove - Gas Sensor(MQ2) module is useful for gas leakage detection (home and
 </tbody></table>
 
 :::tip
-    We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Sensor_gas/), it will help you choose the gas sensor that best suits your needs.
+    We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/), it will help you choose the gas sensor that best suits your needs.
 :::
 ## Features
 
@@ -421,7 +421,7 @@ python grove_gas_sensor.py
 
 Here is code of grove_gas_sensor.py:
 
-```Python
+```python
 #!/usr/bin/env python
 #
 # GrovePi Example for using the  Grove Gas Sensor
@@ -527,7 +527,7 @@ python grove_gas_sensor.py
 ```
 
 Here is code of grove_gas_sensor.py:
-```Python
+```python
 #!/usr/bin/env python
 #
 # GrovePi Example for using the  Grove Gas Sensor
